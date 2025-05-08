@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Action | Plastic Pollution Awareness</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Plastic Pollution</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problem.html">The Problem</a></li>
+                <li><a href="action.html" class="active">Take Action</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="action-hero">
+            <h1>Be Part of the Solution</h1>
+        </section>
+
+        <section class="action-content">
+            <div class="personal-actions">
+                <h2>10 Easy Swaps to Reduce Plastic</h2>
+                <ol class="swap-list">
+                    <li>Use reusable shopping bags</li>
+                    <li>Carry a reusable water bottle</li>
+                    <li>Choose glass or metal containers</li>
+                    <li>Use beeswax wraps instead of cling film</li>
+                    <li>Buy in bulk to reduce packaging</li>
+                    <li>Choose bar soap over liquid in plastic bottles</li>
+                    <li>Use a bamboo toothbrush</li>
+                    <li>Bring your own coffee cup</li>
+                    <li>Say no to plastic straws</li>
+                    <li>Use reusable produce bags</li>
+                </ol>
+            </div>
+
+            <div class="calculator-section">
+                <h2>Calculate Your Plastic Footprint</h2>
+                <div class="calculator">
+                    <div class="calc-question">
+                        <label>How many plastic bottles do you use weekly?</label>
+                        <input type="number" id="bottles" min="0">
+                    </div>
+                    <div class="calc-question">
+                        <label>How many plastic bags do you use weekly?</label>
+                        <input type="number" id="bags" min="0">
+                    </div>
+                    <div class="calc-question">
+                        <label>How many takeaway containers weekly?</label>
+                        <input type="number" id="containers" min="0">
+                    </div>
+
+                    <button id="calculate-btn">Calculate</button>
+                    <div id="calc-result"></div>
+                </div>
+            </div>
+
+            <div class="pledge-section">
+                <h2>Take the Plastic Reduction Pledge</h2>
+                <form id="pledge-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="pledge-options">
+                        <p>I pledge to:</p>
+                        <label><input type="checkbox" name="pledge" value="bags"> Use reusable bags</label>
+                        <label><input type="checkbox" name="pledge" value="bottle"> Carry a reusable bottle</label>
+                        <label><input type="checkbox" name="pledge" value="straws"> Refuse plastic straws</label>
+                        <label><input type="checkbox" name="pledge" value="recycle"> Recycle properly</label>
+                    </div>
+                    <button type="submit">Submit Pledge</button>
+                </form>
+                <div id="pledge-thankyou" style="display:none;">
+                    <h3>Thank you for your pledge!</h3>
+                    <p>We've sent you an email with tips to help you keep your commitment.</p>
+                </div>
+            </div>
+
+            <div class="community-actions">
+                <h2>Get Involved in Your Community</h2>
+                <div class="action-cards">
+                    <div class="action-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Beach Cleanups</h3>
+                        <p>Join or organize local beach cleanup events</p>
+                        <button class="find-events">Find Events Near You</button>
+                    </div>
+                    <div class="action-card">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>Sign Petitions</h3>
+                        <p>Support legislation to reduce plastic waste</p>
+                        <button class="view-petitions">View Current Petitions</button>
+                    </div>
+                    <div class="action-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Donate</h3>
+                        <p>Support organizations fighting plastic pollution</p>
+                        <button class="donate-now">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Join the fight against plastic pollution today</p>
+        <div class="social-icons">
+            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Plastic Pollution Awareness</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
